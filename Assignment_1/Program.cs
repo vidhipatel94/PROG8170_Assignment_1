@@ -43,6 +43,7 @@ namespace Assignment_1
                 }
                 option = GetMenuOptionFromUser();
             }
+            Console.WriteLine("Thank you!");
         }
 
         private static int GetRectLengthFromUser()
