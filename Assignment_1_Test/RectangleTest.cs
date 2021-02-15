@@ -13,6 +13,8 @@ namespace Assignment_1_Test
             rect = new Rectangle();
         }
 
+        //-------- Get length --------
+
         [Test]
         // Test #1.1
         // Test Description: Get length
@@ -48,6 +50,8 @@ namespace Assignment_1_Test
             //Assert
             Assert.AreEqual(expectedLength, result, 1);
         }
+
+        //-------- Set length --------
 
         [TestCase(10)]
         // Test #2.1
@@ -87,6 +91,8 @@ namespace Assignment_1_Test
             Assert.AreEqual(9999, result, 1);
         }
 
+        //-------- Get width --------
+
         [Test]
         // Test #3.1
         // Test Description: Get width
@@ -123,6 +129,8 @@ namespace Assignment_1_Test
             Assert.AreEqual(expectedWidth, result, 1);
         }
 
+        //-------- Set width --------
+
         [TestCase(10)]
         // Test #4.1
         // Test Description: Set Width
@@ -144,7 +152,7 @@ namespace Assignment_1_Test
 
         [TestCase(9999)]
         // Test #4.2
-        // Test Description: Set Width
+        // Test Description: Set Width (with large value)
         // Method of Execution: Automated
         // Input: 9999
         // Expected Output: 9999
@@ -160,6 +168,8 @@ namespace Assignment_1_Test
             //Assert
             Assert.AreEqual(9999, result, 1);
         }
+
+        //-------- Get perimeter --------
 
         [Test]
         // Test #5.1
@@ -183,7 +193,7 @@ namespace Assignment_1_Test
 
         [Test]
         // Test #5.2
-        // Test Description: Get Perimeter
+        // Test Description: Get Perimeter  (with large value)
         // Method of Execution: Automated
         // Input: length=9999, width=9999
         // Expected Output: 39996
@@ -200,6 +210,8 @@ namespace Assignment_1_Test
             //Assert
             Assert.AreEqual(expectedPerimeter, result, 1);
         }
+
+        //-------- Get area --------
 
         [Test]
         // Test #6.1
@@ -223,7 +235,7 @@ namespace Assignment_1_Test
 
         [Test]
         // Test #6.2
-        // Test Description: Get Area
+        // Test Description: Get Area  (with large value)
         // Method of Execution: Automated
         // Input: length=9999, width=9999
         // Expected Output: 99980001
